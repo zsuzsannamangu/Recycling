@@ -1,14 +1,14 @@
 
 
-/* Div wrapping recycle grid including header */
-.gridRecycle {
+/* Paper */
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: auto;
   box-sizing: border-box;
 }
-/* This header should be the class of the div header within the grid class */
-.headerRecycle {
+
+.header {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -16,14 +16,12 @@
   box-sizing: border-box;
 }
 
-
-
-.gridRecycle {
+.grid {
   border: 2px solid blue;
   border-radius: 5px;
 }
 
-.gridRecycle > div {
+.grid > section, article {
   border: 2px solid blue;
   border-radius: 5px;
   padding: 1em;
