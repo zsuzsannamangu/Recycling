@@ -1,6 +1,33 @@
+figure > img {
+  width: 100%;
+  height: 100%;
+}
 
+figcaption {
+  background-color: lightgrey;
+  height: 100%;
+  padding: 2em;
+  visibility: hidden;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 
-/* Paper */
+figure:hover figcaption {
+  opacity: 1;
+  transition: opacity .5s ease;
+  visibility: visible;
+}
+
+figure:hover img {
+  opacity: 1;
+  display: none;
+  /* transition: opacity .5s ease, visibility .5s; */
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,7 +48,7 @@
   border-radius: 5px;
 }
 
-.grid > section, article {
+.grid > section, figure {
   border: 2px solid blue;
   border-radius: 5px;
   padding: 1em;
