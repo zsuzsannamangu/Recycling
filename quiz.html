@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/quiz.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.0.js"></script>
     <script src="js/quiz.js"></script>
     <meta charset="utf-8">
@@ -16,52 +16,50 @@
           <label><input type="radio" name="straw" value="no"> no</label>
           <button type="button" class="btn1 btn-primary" onclick="check();">Next</button>
         </div>
-        <div class="answer">
-          Plastic straws and other items smaller than two by two inches, such as plastic utensils, fall through the machinery that sorts our recycling. The best way to keep plastic straws out of landfills is not to use them. All this disposed plastic ultimately shall reach ocean or earth, only to come back to the food chain.
-        </div>
         <div class="radio2">
           <h3>What cart should you throw frozen food boxes?</h3>
           <label><input type="radio" name="frozen-food" value="Recycling cart"> Recycling cart</label>
           <label><input type="radio" name="frozen-food" value="Garbage cart"> Garbage cart</label>
           <button type="button" class="btn2 btn-primary" onclick="check();">Next</button>
         </div>
-        <div class="answer">
-          Frozen food boxes are made from paperboard — the same material as cereal boxes. The difference is that the paperboard is combined with polyethylene (#4 or LDPE), a type of plastic that helps maintain the paper structure of the container when it’s exposed to cold temperatures. This plastic is not easily separated from the paperboard. Some companies however, like Amy's Kitchen, Inc., package frozen food in boxes with no coating so they can be recycled. When in doubt, look for a label that says "recyclable".
-        </div>
-
         <div class="radio3">
           <h3>Can you recycle plastic bags?</h3>
           <label><input type="radio" name="plastic-bag" value="yes"> yes</label>
           <label><input type="radio" name="plastic-bag" value="no"> no</label>
           <button type="button" class="btn3 btn-primary" onclick="check();">Next</button>
         </div>
-        <div class="answer">
-          Plastic bags get caught in the machinery and they eat up valuable staff time, since workers have to remove them one by one.
-          Bagging recyclables before you toss them in the bin causes even bigger problems, since workers have to tear open the bag and risk being exposed to potentially dangerous substances. Some facilities won't allow employees to open bags, meaning all your precious recyclables end up in the garbage.
-        </div>
-
         <div class="radio4">
           <h3>Do you have to remove caps from plastic bottles before recycling those?</h3>
           <label><input type="radio" name="cap" value="yes"> yes</label>
           <label><input type="radio" name="cap" value="no"> no</label>
           <button type="button" class="btn4 btn-primary" onclick="check();">Next</button>
         </div>
-        <div class="answer">
-          Plastic caps have a different melting point than the bottles they come with, so they can't be recycled. Don't worry about the plastic ring that's left behind on the bottle when you remove the cap — it's small enough not to cause problems.
-        </div>
-
         <div class="radio5">
           <h3>Can you recycle soy milk boxes?</h3>
           <label><input type="radio" name="soy-milk" value="yes"> yes</label>
           <label><input type="radio" name="soy-milk" value="no"> no</label>
           <button type="button" class="btn5 btn-primary" onclick="check();">Next</button>
         </div>
-        <div class="answer">
-          The "aseptic" beverage cartons designed to sit on store shelves at room temperature contain a layer of foil as well as plastic coating, so it's hard to separate the materials for recycling. Some facilities accept aseptic cartons, such as the one in Portland, but not many others.
+        <button type="button" class="btn6 btn-primary" onclick="check();">I'm finished.</button>
       </div>
-      <button type="button" class="btn6 btn-primary" onclick="check();">I'm finished.</button>
     </form>
 
+    <div class="answers">
+      <p id="answer1">Plastic straws and other items smaller than two by two inches, such as plastic utensils, fall through the machinery that sorts our recycling. The best way to keep plastic straws out of landfills is not to use them. All this disposed plastic ultimately shall reach ocean or earth, only to come back to the food chain.</p>
+    </div>
+    <div class="answers">
+      <p id="answer2">Frozen food boxes are made from paperboard — the same material as cereal boxes. The difference is that the paperboard is combined with polyethylene (#4 or LDPE), a type of plastic that helps maintain the paper structure of the container when it’s exposed to cold temperatures. This plastic is not easily separated from the paperboard. Some companies however, like Amy's Kitchen, Inc., package frozen food in boxes with no coating so they can be recycled. When in doubt, look for a label that says "recyclable".</p>
+    </div>
+    <div class="answers">
+      <p id="answer3">Plastic bags get caught in the machinery and they eat up valuable staff time, since workers have to remove them one by one.
+        Bagging recyclables before you toss them in the bin causes even bigger problems, since workers have to tear open the bag and risk being exposed to potentially dangerous substances. Some facilities won't allow employees to open bags, meaning all your precious recyclables end up in the garbage.</p>
+    </div>
+    <div class="answers">
+      <p id="answer4">Plastic caps have a different melting point than the bottles they come with, so they can't be recycled. Don't worry about the plastic ring that's left behind on the bottle when you remove the cap — it's small enough not to cause problems.</p>
+    </div>
+    <div class="answers">
+      <p id="answer5">The "aseptic" beverage cartons designed to sit on store shelves at room temperature contain a layer of foil as well as plastic coating, so it's hard to separate the materials for recycling. Some facilities accept aseptic cartons, such as the one in Portland, but not many others..</p>
+    </div>
 
     <div class="answeryes">
       Yes, that's correct.
