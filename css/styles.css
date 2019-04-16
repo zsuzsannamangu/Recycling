@@ -1,10 +1,10 @@
-/* .mainGrid {
+.mainGrid {
   display: grid;
-  grid-template-rows: 15vh auto;
-  grid-template-columns: 1fr 10vw;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   border: 5px solid blue;
   height: 100vh;
-} */
+}
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
