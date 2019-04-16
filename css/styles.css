@@ -77,7 +77,6 @@ figure > .paper {
 }
 
 .header {
-  background: gray;
   background: rgb(204, 204, 204);
   background: rgba(204, 204, 204, 0.5);
   border-style: inset;
