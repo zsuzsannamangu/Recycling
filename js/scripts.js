@@ -23,4 +23,4 @@ $(function() {
     event.preventDefault();
     $(".noCurbGrid").toggle();
   });
-});noCurb
+});
