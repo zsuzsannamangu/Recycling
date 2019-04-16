@@ -48,7 +48,7 @@ h3, h1, p, section {
 
 .grid {
   display: grid;
-  gap: .5%;
+  gap: 1%;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: center;
   box-sizing: border-box;
@@ -63,8 +63,8 @@ section > p {
 figure {
   display: none;
   background: rgba(69, 155, 82, 0.75);
-  border-style: inset;
-  border-radius: 5px;
+  border: 5px solid white;
+  border-radius: 15px;
   padding: 1em;
 }
 
@@ -76,5 +76,6 @@ figure > .paper {
   margin: 50px;
   background: rgb(204, 204, 204);
   background: rgba(204, 204, 204, 0.5);
-  border-style: inset;
+  border: 5px solid white;
+  border-radius: 15px;
 }
