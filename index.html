@@ -1,318 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.4.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <meta charset="utf-8">
-</head>
-<body class="mainGrid" background="img/background.jpg">
-  <div class="container">
-    <header>
-      <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
-      <h1 class="heading">Portland Recycling Guide</h1>
-    </header>
-    <!-- This is the location finder, it's here until we know where to move it -->
-    <h4>Enter your Portland street address to find out your pickup days:</h4>
-    <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" /> <input type="submit" value="Submit" /></form>
-
-    <!-- Paper Grid -->
-    <section class="paper header">
-      <h3 class="paper-title">Paper</h3>
-      <!-- <p class="paper-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
-    </section>
-    <main class="grid">
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/newspaper.jpg" alt="newspaper"/>
-        <figcaption class="paper-cards-title">
-          <p>Newspapers, magazines, catalogs and phone books</p>
-        </figcaption>
-      </figure>
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/cardboard.jpg" alt="cardboard box" />
-        <figcaption class="paper-cards-title">
-          <p>Cardbord boxes (Please flatten!)</p>
-        </figcaption>
-      </figure>
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/scrap-paper.jpg" alt="scrap paper" />
-        <figcaption class="paper-cards-title">
-          <p>Scrap paper</p>
-        </figcaption>
-      </figure>
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/mail.jpg" alt="junk mail" />
-        <figcaption class="paper-cards-title">
-          <p>Junk mail</p>
-        </figcaption>
-      </figure>
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/cartons.jpg" alt="cartons" />
-        <figcaption class="paper-cards-title">
-          <p>Cartons (milk, juice, soup)</p>
-        </figcaption>
-      </figure>
-      <figure class="paperGrid">
-        <img class="paper-cards-img" src="img/shredded-paper.jpg" alt="shredded-paper" />
-        <figcaption class="paper-cards-title">
-          <p>Shredded paper (Must be in paper bag!)</p>
-        </figcaption>
-      </figure>
-    </main>
-    <br>
-    <!-- Plastic -->
-    <section class="plastic header">
-      <h3 class="plastic-title">Plastic</h3>
-      <p class="plastic-text text">Rinse. Discard lids!</p>
-    </section>
-    <main class="grid">
-      <figure class="plasticGrid">
-        <img class="plastic-cards-img" src="img/plastic-bottle.png" alt="plastic bottles" />
-        <figcaption class="plastic-cards-title">
-          <p>Bottles with a neck (6 oz. or larger)</p>
-        </figcaption>
-      </figure>
-      <figure class="plasticGrid">
-        <img class="plastic-cards-img" src="img/plastic-tub.jpg" alt="plastic tub" />
-        <figcaption class="plastic-cards-title">
-          <p>Plastic tubs (6 oz. or larger)</p>
-        </figcaption>
-      </figure>
-      <figure class="plasticGrid">
-        <img class="plastic-cards-img" src="img/plant-pots.jpg" alt="plant pots" />
-        <figcaption class="plastic-cards-title">
-          <p>Plant pots (4" or larger)</p>
-        </figcaption>
-      </figure>
-      <figure class="plasticGrid">
-        <img class="plastic-cards-img" src="img/bucket.jpg" alt="bucket" />
-        <figcaption class="plastic-cards-title">
-          <p>Buckets (5 gal. or smaller)</p>
-        </figcaption>
-      </figure>
-    </main>
-    <br>
-    <!-- Metal -->
-    <section class="metal header">
-      <h3 class="metal-title">Metal</h3>
-      <!-- <p class="metal-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
-    </section>
-    <main class="grid">
-      <figure class="metalGrid">
-        <img class="metal-cards-img" src="img/alum-cans.jpg" alt="aluminium can"/>
-        <figcaption class="metal-cards-title">
-          <p>Aluminium, tin and steel food cans</p>
-        </figcaption>
-      </figure>
-      <figure class="metalGrid">
-        <img class="metal-cards-img" src="img/paint-can.jpg" alt="paint can" />
-        <figcaption class="metal-cards-title">
-          <p>Empty, dry metal paint cans</p>
-        </figcaption>
-      </figure>
-      <figure class="metalGrid">
-        <img class="metal-cards-img" src="img/aerosol.png" alt="aerosol can" />
-        <figcaption class="metal-cards-title">
-          <p>Empty aerosol can</p>
-        </figcaption>
-      </figure>
-      <figure class="metalGrid">
-        <img class="metal-cards-img" src="img/foil.jpg" alt="aluminium foil" />
-        <figcaption class="metal-cards-title">
-          <p>Aluminum foil</p>
-        </figcaption>
-      </figure>
-      <figure class="metalGrid">
-        <img class="metal-cards-img" src="img/scrap-metal.jpg" alt="scrap metal" />
-        <figcaption class="metal-cards-title">
-          <p>Scrap metal (smaller than 30" and less than 30 lbs)</p>
-        </figcaption>
-      </figure>
-    </main>
-    <br>
-    <!-- Glass -->
-    <section class="glass header">
-      <h3 class="glass-title">Glass</h3>
-      <p class="glass-text text">Mix all colors together. Rinse. Labels OK. Separate from other recyclables, put glass in the glass-only recycling tub.</p>
-    </section>
-    <main class="grid">
-      <figure class="glassGrid">
-        <img class="glass-cards-img" src="img/glass-jar.jpg" alt="glass jar" />
-        <figcaption class="glass-cards-title">
-          <p>Glass Jars</p>
-        </figcaption>
-      </figure>
-      <figure class="glassGrid">
-        <img class="glass-cards-img" src="img/glass-group.jpg" alt="glass bottles" />
-        <figcaption class="glass-cards-title">
-          <p>Glass beverage bottles (wine, beer, soda)</p>
-        </figcaption>
-      </figure>
-    </main>
-    <br>
-    <!-- Trash -->
-    <section class="trash header">
-      <h3 class="trash-title">Trash Cart</h3>
-      <p class="trash-text text">This is stuff that cannot be recycled in Portland. It goes into landfills and remains there for generations. Reduce or re-use these items whenever possible.</p>
-    </section>
-    <main class="grid">
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/plastic-bags.jpg" alt="plastic bags" />
-        <figcaption class="trash-cards-title">
-          <p>Plastic bags</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/plastic-container.jpg" alt="plastic container" />
-        <figcaption class="trash-cards-title">
-          <p>Plastic containers labeled compostable</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/plastic-lids.jpg" alt="plastic lids" />
-        <figcaption class="trash-cards-title">
-          <p>Plastic lids</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/takeout-container.jpg" alt="takeout box" />
-        <figcaption class="trash-cards-title">
-          <p>Takeout containers</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/frozen-food-box.jpg" alt="frozen food box" />
-        <figcaption class="trash-cards-title">
-          <p>Freezer boxes</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/diaper.jpg" alt="diaper" />
-        <figcaption class="trash-cards-title">
-          <p>Diapers, pet waste, cat litter, feminine hygiene products (must be bagged)</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/coffee-cups.jpg" alt="paper coffee cup" />
-        <figcaption class="trash-cards-title">
-          <p>Coffee cups</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/pesticides.jpg" alt="pesticide bottle" />
-        <figcaption class="trash-cards-title">
-          <p>Pesticide or herbicide bottles</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/propane.jpg" alt="propane cylinder" />
-        <figcaption class="trash-cards-title">
-          <p>Propane cylinders</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/lightbulb.jpg" alt="lightbulb" />
-        <figcaption class="trash-cards-title">
-          <p>Light bulbs</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/drinking-glass.jpg" alt="drinking glass" />
-        <figcaption class="trash-cards-title">
-          <p>Drinking glasses</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/vase.jpg" alt="vase" />
-        <figcaption class="trash-cards-title">
-          <p>Flower vases</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/ceramics.jpg" alt="ceramics" />
-        <figcaption class="trash-cards-title">
-          <p>Ceramics</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/broken-glass.jpg" alt="broken glass" />
-        <figcaption class="trash-cards-title">
-          <p>Broken glass</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/styrofoam.jpg" alt="styrofoam" />
-        <figcaption class="trash-cards-title">
-          <p>Styrofoam™</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/clamshells.jpg" alt="clamshell" />
-        <figcaption class="trash-cards-title">
-          <p>Clamshells</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/painted-wood.jpg" alt="painted wood" />
-        <figcaption class="trash-cards-title">
-          <p>Painted or stained wood and plywood</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/sawdust.jpg" alt="sawdust" />
-        <figcaption class="trash-cards-title">
-          <p>Ashes and sawdust (must be bagged)</p>
-        </figcaption>
-      </figure>
-      <figure class="trashGrid">
-        <img class="trash-cards-img" src="img/packing-peanuts.jpg" alt="Packaging peanuts" />
-        <figcaption class="trash-cards-title">
-          <p>Packaging peanuts (must be bagged when thrown to trash)
-            Block packaging foam- Styrofoam blocks are accepted at Agilyx Corporation at 13240 SW Wall St., Tigard, OR 97223. A dropbox is available 24 hours for residential drop-off.</p>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+  <body class="container">
+    <div class="grid">
+      <div class="header">
+        <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
+        <h1 class="heading">Portland Recycling Guide</h1>
+      </div>
+      <figure class="guide gridBox">
+        <img src="img/recycleinfo.png" alt="image of recycling bin">
+        <figcaption>
+          <p>See our recycling guide</p>
           </figcaption>
-        </figure>
-        <figure class="trashGrid">
-          <img class="trash-cards-img" src="img/kitchen-oil.jpg" alt="Kitchen oil" />
-          <figcaption class="trash-cards-title">
-            <p>Kitchen fats, oil, grease (place in sealed container)</p>
-          </figcaption>
-        </figure>
-      </main>
-      <br>
-<!-- No Curbside -->
-      <section class="noCurb header">
-        <h3 class="noCurbside-title">No Curbside Disposal</h3>
-        <!-- <p class="noCurbside-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
-      </section>
-      <main class="grid">
-        <figure class="noCurbGrid">
-          <img class="noCurbside-img" src="img/ewaste.jpg" alt="computers and keyboards" />
-          <figcaption class="noCurbside-cards-title">
-            Computers, monitors and TVs
-            These can be taken to Pride Recycling Depot at 13910 SW Tualatin-Sherwood Rd., Sherwood, OR 97140. Their hours are Mo-Fri 8:00am-4:30pm.
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/hazmat.jpg" alt="Hazardous material" />
-          <figcaption class="noCurbside-cards-title">
-            Hazardous waste: automotive fluids, kitchen oil, pesticides, herbicides, solvents
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/CFL.jpg" alt="Compact fluorescent light bulb" />
-          <figcaption class="noCurbside-cards-title">
-            Compact fluorescent light bulbs (CFLs)
-            CFLs can be dropped off at Total Reclaim, 6427 NE 59th Place, Portland OR 97218, M-F 8am-4:30pm.
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/batteries.jpg" alt="batteries" />
-          <figcaption class="noCurbside-cards-title">
-            Batteries
-          </figcaption>
-        </figure>
-      </main>
+      </figure>
+      <figure class="quiz gridBox">
+        <img src="img/quiz.jpg" alt="image of recycling bin">
+        <figcaption>
+          <p>Test your recycling knowledge</p>
+        </figcaption>
+      </figure>
+      <figure class="map gridBox">
+        <img src="img/map.png" alt="image of recycling bin">
+        <figcaption>
+          <p>Find out your pickup days</p>
+      </figcaption>
+    </figure>
+      <div class="footer">
+        <h5>© 2019 MLBZ. All rights reserved.</h5>
+      </div>
     </div>
   </body>
-  </html>
+</html>
