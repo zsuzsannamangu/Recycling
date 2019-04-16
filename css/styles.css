@@ -1,3 +1,11 @@
+/* .mainGrid {
+  display: grid;
+  grid-template-rows: 15vh auto;
+  grid-template-columns: 1fr 10vw;
+  border: 5px solid blue;
+  height: 100vh;
+} */
+
 figure > img {
   width: 100%;
   height: 100%;
@@ -62,4 +70,11 @@ figure {
 
 figure > .paper {
   display: show;
+}
+
+.header {
+  background: gray;
+  background: rgb(204, 204, 204);
+  background: rgba(204, 204, 204, 0.5);
+  border-style: inset;
 }
