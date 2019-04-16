@@ -2,7 +2,7 @@
 
 #### _Portland Recycling Guide, 4-15-19_
 
-#### By _**Zsuzsanna Mangu, Lindsey Baker, Brian Hensley**_
+#### By _**Zsuzsanna Mangu, Lindsey Baker, Brian Hensley, Mathew Akre**_
 
 ## Description
 
