@@ -53,6 +53,7 @@ h3, h1, p, section {
 }
 
 figure {
+  display: none;
   background-color: gray;
   border-style: inset;
   border-radius: 5px;
