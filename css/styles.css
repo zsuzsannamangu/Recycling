@@ -59,3 +59,7 @@ figure {
   border-radius: 5px;
   padding: 1em;
 }
+
+figure > .paper {
+  display: show;
+}
