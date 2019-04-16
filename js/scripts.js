@@ -1,32 +1,32 @@
 $(function() {
   $(".paper").click(function(event) {
     event.preventDefault();
-      $("figure").hide();
+    $("figure, .text").hide();
     $(".paperGrid").toggle();
   });
   $(".plastic").click(function(event) {
     event.preventDefault();
-      $("figure").hide();
-    $(".plasticGrid").toggle();
+    $("figure, .text").hide();
+    $(".plasticGrid, .plastic-text").toggle();
   });
   $(".metal").click(function(event) {
     event.preventDefault();
-      $("figure").hide();
+    $("figure, .text").hide();
     $(".metalGrid").toggle();
   });
   $(".glass").click(function(event) {
     event.preventDefault();
-      $("figure").hide();
-    $(".glassGrid").toggle();
+    $(".glassGrid, .glass-text").toggle();
+    $("figure, .text").hide();
   });
   $(".trash").click(function(event) {
     event.preventDefault();
-      $("figure").hide();
-    $(".trashGrid").toggle();
+    $("figure, .text").hide();
+    $(".trashGrid, .trash-text").toggle();
   });
   $(".noCurb").click(function(event) {
     event.preventDefault();
-    $("figure").hide();
+    $("figure, .text").hide();
     $(".noCurbGrid").toggle();
   });
 });
