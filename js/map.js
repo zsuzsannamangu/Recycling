@@ -46,16 +46,16 @@ function initMap() {
       iconImage:recycleIcon,
       content:'<h2>Goodwill Industries</h2><br><h4>1231 NE Broadway, Portland, OR 97232</h4>'
     },
-    {
-      coords:{lat:,lng:},
-      iconImage:recycleIcon,
-      content:'<h2></h2><br><h4></h4>'
-    },
-    {
-      coords:{lat:,lng:},
-      iconImage:recycleIcon,
-      content:'<h2></h2><br><h4></h4>'
-    },
+    // {
+    //   coords:{lat:,lng:},
+    //   iconImage:recycleIcon,
+    //   content:'<h2></h2><br><h4></h4>'
+    // },
+    // {
+    //   coords:{lat:,lng:},
+    //   iconImage:recycleIcon,
+    //   content:'<h2></h2><br><h4></h4>'
+    // },
   ]
 
     // Loop through Markers
