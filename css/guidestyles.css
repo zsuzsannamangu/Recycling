@@ -54,6 +54,7 @@ h3, h1, p, section {
   box-sizing: border-box;
   border-radius: 5px;
   grid-auto-rows: 300px;
+  margin: 0 7vw 0 7vw;
 }
 
 section > p {
@@ -73,7 +74,7 @@ figure {
 }
 
 .header {
-  margin: 50px;
+  margin: 3vh 7vw 3vh 7vw;;
   background: rgb(204, 204, 204);
   background: rgba(204, 204, 204, 0.5);
   border: 5px solid white;
