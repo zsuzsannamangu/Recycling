@@ -13,3 +13,9 @@
   color: #005500;
   text-align: center;
 }
+
+#answers {
+  width: 90%;
+  margin-top: 5vh;
+  color: #005500;
+}
