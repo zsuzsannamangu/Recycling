@@ -22,90 +22,91 @@
     <h4>Enter your Portland street address to find out your pickup days:</h4>
     <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" placeholder="Enter Addess..." /> <input type="submit" value="Submit" /></form>
 
-    <input class="awesomplete" list="mylist" placeholder="Search..."/>
-      <!-- <a href=".paper-section"> -->
+    <form class="" action="index.html" method="post">
+      <input class="awesomplete" list="mylist" placeholder="Search..."/>
       <datalist id="mylist">
         <!-- Paper section -->
-        <option>cardboard</option>
-        <option>scrap paper</option>
-        <option>paper</option>
-        <option>newspaper</option>
-        <option>envelopes</option>
-        <option>mail</option>
-        <option>shredded paper</option>
-        <option>cartons</option>
-        <option>tetrapacks</option>
-        <option>food boxes</option>
-        <option>aseptic containers</option>
+        <option class="paper-value">cardboard</option>
+        <option class="paper-value">scrap paper</option>
+        <option class="paper-value">paper</option>
+        <option class="paper-value">newspaper</option>
+        <option class="paper-value">envelopes</option>
+        <option class="paper-value">mail</option>
+        <option class="paper-value">shredded paper</option>
+        <option class="paper-value">cartons</option>
+        <option class="paper-value">tetrapacks</option>
+        <option class="paper-value">food boxes</option>
+        <option class="paper-value">aseptic containers</option>
         <!-- plastic section -->
-        <option>milk cartons</option>
-        <option>juice cartons</option>
-        <option>soup cartons</option>
-        <option>platic bottles</option>
-        <option>plastic tubs</option>
-        <option>yogurt cups</option>
-        <option>butter tubs</option>
-        <option>plastic flower pots</option>
-        <option>buckets</option>
+        <option class="plastic-value">milk cartons</option>
+        <option class="plastic-value">juice cartons</option>
+        <option class="plastic-value">soup cartons</option>
+        <option class="plastic-value">platic bottles</option>
+        <option class="plastic-value">plastic tubs</option>
+        <option class="plastic-value">yogurt cups</option>
+        <option class="plastic-value">butter tubs</option>
+        <option class="plastic-value">plastic flower pots</option>
+        <option class="plastic-value">buckets</option>
         <!-- metal section -->
-        <option>aluminum</option>
-        <option>aluminum cans</option>
-        <option>paint cans</option>
-        <option>aerosol cans</option>
-        <option>steel</option>
-        <option>steel cans</option>
-        <option>scrap metal</option>
-        <option>metal lids</option>
+        <option class="metal-value">aluminum</option>
+        <option class="metal-value">aluminum cans</option>
+        <option class="metal-value">paint cans</option>
+        <option class="metal-value">aerosol cans</option>
+        <option class="metal-value">steel</option>
+        <option class="metal-value">steel cans</option>
+        <option class="metal-value">scrap metal</option>
+        <option class="metal-value">metal lids</option>
         <!-- glass section -->
-        <option>glass</option>
-        <option>glass jars</option>
-        <option>glass bottles</option>
-        <option>colored glass</option>
+        <option class="glass-value">glass</option>
+        <option class="glass-value">glass jars</option>
+        <option class="glass-value">glass bottles</option>
+        <option class="glass-value">colored glass</option>
         <!-- trash section -->
-        <option>plastic bags</option>
-        <option>compostable containers</option>
-        <option>compostable plastics</option>
-        <option>compostable utinsils</option>
-        <option>plastic lids</option>
-        <option>take out containers</option>
-        <option>freezer boxes</option>
-        <option>diapers</option>
-        <option>coffee cups</option>
-        <option>lightbulb</option>
-        <option>drinking glasses</option>
-        <option>flower vases</option>
-        <option>cereamics</option>
-        <option>broken glass</option>
-        <option>styrofoam</option>
-        <option>clamshell packaging</option>
-        <option>painted wood</option>
-        <option>treated wood</option>
-        <option>stained wood</option>
-        <option>plywood</option>
-        <option>sawdust</option>
-        <option>ashes</option>
-        <option>packing peanuts</option>
+        <option class="trash-value">plastic bags</option>
+        <option class="trash-value">compostable containers</option>
+        <option class="trash-value">compostable plastics</option>
+        <option class="trash-value">compostable utinsils</option>
+        <option class="trash-value">plastic lids</option>
+        <option class="trash-value">take out containers</option>
+        <option class="trash-value">freezer boxes</option>
+        <option class="trash-value">diapers</option>
+        <option class="trash-value">coffee cups</option>
+        <option class="trash-value">lightbulb</option>
+        <option class="trash-value">drinking glasses</option>
+        <option class="trash-value">flower vases</option>
+        <option class="trash-value">cereamics</option>
+        <option class="trash-value">broken glass</option>
+        <option class="trash-value">styrofoam</option>
+        <option class="trash-value">clamshell packaging</option>
+        <option class="trash-value">painted wood</option>
+        <option class="trash-value">treated wood</option>
+        <option class="trash-value">stained wood</option>
+        <option class="trash-value">plywood</option>
+        <option class="trash-value">sawdust</option>
+        <option class="trash-value">ashes</option>
+        <option class="trash-value">packing peanuts</option>
         <!-- special section -->
-        <option>propane tanks</option>
-        <option>hazardous chemicals</option>
-        <option>pesticides</option>
-        <option>herbicides</option>
-        <option>paints</option>
-        <option>cleaners</option>
-        <option>cooking oil</option>
-        <option>kitchen oils</option>
-        <option>e-waste</option>
-        <option>computers</option>
-        <option>monitors</option>
-        <option>televisions</option>
-        <option>electronics</option>
-        <option>CFLs</option>
-        <option>batteries</option>
+        <option class="noCurb-value">propane tanks</option>
+        <option class="noCurb-value">hazardous chemicals</option>
+        <option class="noCurb-value">pesticides</option>
+        <option class="noCurb-value">herbicides</option>
+        <option class="noCurb-value">paints</option>
+        <option class="noCurb-value">cleaners</option>
+        <option class="noCurb-value">cooking oil</option>
+        <option class="noCurb-value">kitchen oils</option>
+        <option class="noCurb-value">e-waste</option>
+        <option class="noCurb-value">computers</option>
+        <option class="noCurb-value">monitors</option>
+        <option class="noCurb-value">televisions</option>
+        <option class="noCurb-value">electronics</option>
+        <option class="noCurb-value">CFLs</option>
+        <option class="noCurb-value">batteries</option>
       </datalist>
+      <button id="search-id" type="submit"><i class="fas fa-search"></i></button>
+    </form>
 
-      <!-- <button type="button"><i class="fas fa-search"></i></button>
 
-      <!-- Paper Grid -->
+      <!-- <!- Paper Grid -->
       <a name="paper-section">
         <section class="paper header">
           <h3 class="paper-title">Paper</h3>
