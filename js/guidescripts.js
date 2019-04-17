@@ -65,16 +65,14 @@ $(function(){
   $('#searchForm').submit(function(event) {
     event.preventDefault();
     var userSearchInput = $("#searchList").val()
-    userSearchInput
     var optionSearch = document.getElementsByTagName("option");
-    console.log(typeof optionSearch);
-    for (var i = 0; i < = optionSearch.length; i++) {
-      if (userSearchInput === optionSearch.val()) {
-        alert(optionSearch.val());
-      }
-    }
-    console.log(userSearchInput);
     console.log(optionSearch);
+    // for (var i = 0; i < = optionSearch.length; i++) {
+      // if (userSearchInput === optionSearch.val()) {
+    //     alert(optionSearch.k;
+    //   }
+    // }
+    console.log(userSearchInput);
 
     // var to store user input
     // compare input to values in #myList -> google method
