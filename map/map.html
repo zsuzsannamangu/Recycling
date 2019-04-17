@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,14 +7,29 @@
     <script src="../js/jquery-3.4.0.js"></script>
     <script src="../js/map.js"></script>
     <meta charset="utf-8">
-    <title>I DONT NEED ONE</title>
+    <title>Recycling Locator</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="grid">
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwjPQMk0_9M-BU_0UywHLWbXhcqWajlEo&callback=initMap">
-    </script>
+      <a href="../index.html">
+        <header>
+          <img class="logo" src="../img/recycle.png" width="200px" alt="image of recycling" />
+          <h1 class="heading">Portland Recycling Locations</h1>
+        </header>
+      </a>
 
+      <div id="map"></div>
+
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwjPQMk0_9M-BU_0UywHLWbXhcqWajlEo&callback=initMap">
+      </script>
+
+    </div>
+    <p class="metro">metro</p><br>
+    <p class="pride">pride</p><br>
+    <p class="total">total</p><br>
+    <p class="agilyx">agilyx</p><br>
+    <p class="battery">battery</p><br>
   </body>
 </html>

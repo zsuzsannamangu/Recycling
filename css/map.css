@@ -4,5 +4,33 @@ markers.iconImage {
 
 #map {
   height: 500px;
-  width: 100%;
+  width: 80%;
+  float: right;
+}
+
+.heading {
+  text-decoration: none;
+  color: #0A3200;
+}
+.heading > a:hover {
+  text-decoration: none;
+  color: #0A3200;
+}
+
+.logo  {
+  height: 15vh;
+  float: left;
+}
+ body {
+   text-align: center;
+   color: #0A3200;
+ }
+header {
+  background: tan;
+  height: 20vh;
+  margin-bottom: 5px;
+}
+p {
+  float: left;
+  display: none;
 }

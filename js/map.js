@@ -19,32 +19,32 @@ function initMap() {
     {
       coords:{lat:45.569035,lng:-122.748100},
       iconImage:recycleIcon,
-      content:'<h2>Metro Central Hazardous Waste</h2><br><h4> 6161 NW 61st Ave, Portland, OR 97210</h4>'
+      content:'<h2><a href="https://www.oregonmetro.gov/tools-living/garbage-and-recycling/garbage-recycling-hazardous-waste-disposal-portland">Metro Central Hazardous Waste</a></h2><br><h4> 6161 NW 61st Ave, Portland, OR 97210</h4> $(.metro).show();'
     },
     {
       coords:{lat:45.368103,lng:-122.817439},
       iconImage:recycleIcon,
-      content:'<h2>Pride Recycling Depot</h2><br><h4>13910 SW Tualatin-Sherwood Rd.<br>Sherwood, OR 97140</h4>'
+      content:'<h2><a href="https://pridedisposal.com/resources/recycling-drop-off">Pride Recycling Depot</a></h2><br><h4>13910 SW Tualatin-Sherwood Rd.<br>Sherwood, OR 97140</h4>'
     },
     {
       coords:{lat:45.569101,lng:-122.601563},
       iconImage:recycleIcon,
-      content:'<h2>Total Reclaim</h2><br><h4>6427 NE 59th Place<br>Portland OR 97218</h4>'
+      content:'<h2><a href="https://www.totalreclaim.com/">Total Reclaim</a></h2><br><h4>6427 NE 59th Place<br>Portland OR 97218</h4>'
     },
     {
       coords:{lat:45.424187,lng:-122.761219},
       iconImage:recycleIcon,
-      content:'<h2>Agilyx Corporation</h2><br><h4>13240 SW Wall St.<br>Tigard, OR 97223</h4>'
+      content:'<h2><a href="https://www.agilyx.com/">Agilyx Corporation</a></h2><br><h4>13240 SW Wall St.<br>Tigard, OR 97223</h4>'
     },
     {
       coords:{lat:45.516599,lng:-122.645374},
       iconImage:recycleIcon,
-      content:'<h2>Battery X-Change</h2><br><h4>2003 SE Belmont St.<br>Portland, OR 97214</h4>'
+      content:'<h2><a href="https://www.batteryxchange.com/">Battery X-Change</a></h2><br><h4>2003 SE Belmont St.<br>Portland, OR 97214</h4>'
     },
     {
       coords:{lat:45.535126,lng:-122.653145},
       iconImage:recycleIcon,
-      content:'<h2>Goodwill Industries</h2><br><h4>1231 NE Broadway, Portland, OR 97232</h4>'
+      content:'<h2><a href="http://www.goodwill.org/">Goodwill Industries</a></h2><br><h4>1231 NE Broadway, Portland, OR 97232</h4>'
     },
     // {
     //   coords:{lat:,lng:},
@@ -85,6 +85,7 @@ function initMap() {
 
         marker.addListener('click', function(){
           infoWindow.open(map, marker);
+          alert(this.props.content);
         });
       }
     }
