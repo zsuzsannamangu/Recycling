@@ -9,10 +9,12 @@
 </head>
 <body class="mainGrid" background="img/background.jpg">
   <div class="container">
-    <header>
-      <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
-      <h1 class="heading">Portland Recycling Guide</h1>
-    </header>
+    <a href="index.html">
+      <header>
+        <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
+        <h1 class="heading">Portland Recycling Guide</h1>
+      </header>
+    </a>
     <!-- This is the location finder, it's here until we know where to move it -->
     <h4>Enter your Portland street address to find out your pickup days:</h4>
     <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" /> <input type="submit" value="Submit" /></form>
