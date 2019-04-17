@@ -7,33 +7,53 @@
     <script src="js/scripts.js"></script>
     <title></title>
   </head>
-  <body class="container">
-    <div class="grid">
+  <body>
+    <div class="gridHeader">
       <div class="header">
         <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
         <h1 class="heading">Portland Recycling Guide</h1>
       </div>
-    <a href="guide.html">
-      <figure class="guide gridBox">
-          <img src="img/recycleinfo.png" alt="image of recycling bin">
-          <figcaption>
-            <p>See our recycling guide</p>
-          </figcaption>
-      </figure>
-    </a>
+    </div>
+    <div class="grid">
+      <a href="guide.html">
+        <figure class="guide gridBox">
+            <img src="img/recycleinfo.png" alt="image of recycling bin">
+            <figcaption>
+              <p>See our recycling guide</p>
+            </figcaption>
+        </figure>
+      </a>
       <figure class="quiz gridBox">
         <img src="img/quiz.jpg" alt="image of recycling bin">
         <figcaption>
           <p>Test your recycling knowledge</p>
         </figcaption>
       </figure>
-      <figure class="map gridBox">
-        <img src="img/map.png" alt="image of recycling bin">
-        <figcaption>
-          <p>Find out your pickup days</p>
-      </figcaption>
-    </figure>
+      <a href="map/map.html">
+        <figure class="map gridBox">
+          <img src="img/map.png" alt="image of recycling bin">
+          <figcaption>
+            <p>Find out your pickup days</p>
+          </figcaption>
+        </figure>
+      </a>
       <div class="footer">
+        <div id="siteMenu">
+          <h4>Site Menu:</h4>
+          <ul>
+            <a href="guide.html"><li>Portland Recycling Guide</li></a>
+            <li>Recycling Knowledge Quiz</li>
+            <li id="pickup">Your Pickup Information</li>
+            <a href="../map/map.html">  <li>Nearest Recyling Location</li></a>
+          </ul>
+          <div id="pickUpLocator" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h4>Enter your Portland street address to find out your pickup days:</h4>
+              <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" /> <input type="submit" value="Submit" /></form>
+            </div>
+          </div>
+        </div>
         <h5>© 2019 MLBZ. All rights reserved.</h5>
       </div>
     </div>
