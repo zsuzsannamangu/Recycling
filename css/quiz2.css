@@ -1,7 +1,15 @@
 #qa {
-  border: 6px solid #EC058E;
+  border: 4px solid #EC058E;
   padding: 10px 40px 40px 40px;
-  width: 70%;
-  background-color: #FFFBFC;
+  width: 90%;
+  /* background-color: #FFFBFC; */
   margin-top: 5vh;
+  color: #005500;
+}
+
+#quiz_progress {
+  width: 90%;
+  margin-top: 5vh;
+  color: #005500;
+  text-align: center;
 }
