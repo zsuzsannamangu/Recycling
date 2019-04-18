@@ -46,47 +46,40 @@ function initMap() {
       iconImage:recycleIcon,
       content:'<h2><a href="http://www.goodwill.org/">Goodwill Industries</a></h2><br><h4>1231 NE Broadway, Portland, OR 97232</h4>'
     },
-    // {
-    //   coords:{lat:,lng:},
-    //   iconImage:recycleIcon,
-    //   content:'<h2></h2><br><h4></h4>'
-    // },
-    // {
-    //   coords:{lat:,lng:},
-    //   iconImage:recycleIcon,
-    //   content:'<h2></h2><br><h4></h4>'
-    // },
-  ]
 
-    // Loop through Markers
 
-    for(var i = 0; i < markers.length; i++) {
-      addMarker(markers[i]);
+  // Loop through Markers
+
+  for(var i = 0; i < markers.length; i++) {
+    addMarker(markers[i]);
+  }
+
+
+  //Add Marker function
+  function addMarker(props,){
+    var marker = new google.maps.Marker({
+      position:props.coords,
+      map:map,
+      // icon:props.iconImage
+    });
+    // Check for cuson icon
+    if (props.iconImage){
+      // Set icon image
+      marker.setIcon(props.iconImage);
     }
 
-    //Add Marker function
-    function addMarker(props){
-      var marker = new google.maps.Marker({
-        position:props.coords,
-        map:map,
-        // icon:props.iconImage
+    // Check for content
+    if (props.content){
+      var infoWindow = new google.maps.InfoWindow({
+        content:props.content
+      })
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+        alert(this.props.content);
       });
-      // Check for cuson icon
-      if (props.iconImage){
-        // Set icon image
-        marker.setIcon(props.iconImage);
-      }
 
-      // Check for content
-      if (props.content){
-        var infoWindow = new google.maps.InfoWindow({
-          content:props.content
-        })
 
-        marker.addListener('click', function(){
-          infoWindow.open(map, marker);
-          alert(this.props.content);
-        });
-      }
     }
   }
+}
