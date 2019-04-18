@@ -21,6 +21,9 @@
     <!-- This is the location finder, it's here until we know where to move it -->
     <!-- <h4>Enter your Portland street address to find out your pickup days:</h4>
     <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" placeholder="Enter Addess..." /> <input type="submit" value="Submit" /></form> -->
+<div class="header">
+  <h4>Unsure About What to Do With Your Waste? <br>Search Here:</h4>
+
 
     <form id="searchForm">
       <input name="searchList" class="awesomplete" id="searchList" list="mylist" placeholder="Enter an item..."/>
@@ -104,13 +107,13 @@
       </datalist>
       <button id="search-id" type="submit"><i class="fas fa-search"></i></button>
     </form>
-
+</div>
 
     <!-- <!- Paper Grid -->
     <a name="paper-section">
       <section class="paper header">
         <h3 class="paper-title">Paper</h3>
-        <!-- <p class="paper-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
+        <p class="paper-text text">These recyclables can be placed in your curbside recycling to be taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p>
       </section>
     </a>
       <main class="grid">
@@ -156,7 +159,7 @@
     <a name="plastic-section">
       <section class="plastic header">
         <h3 class="plastic-title">Plastic</h3>
-        <p class="plastic-text text">Rinse. Discard lids!</p>
+        <p class="plastic-text text">These items can be placed in curbside recycling. Remember to rinse all items first! Lids cannot be recycled, discard plastic lids!</p>
       </section>
     </a>
       <main class="grid">
@@ -190,7 +193,7 @@
     <a name="metal-section">
       <section class="metal header">
         <h3 class="metal-title">Metal</h3>
-        <!-- <p class="metal-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
+        <p class="metal-text text">These recyclables can be placed in curbside recycling. Remeber to rinse!</p>
       </section>
     </a>
       <main class="grid">
@@ -383,7 +386,7 @@
     <a name="noCurb-section">
       <section class="noCurb header">
         <h3 class="noCurbside-title">No Curbside Disposal</h3>
-        <!-- <p class="noCurbside-text">These recyclables are taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p> -->
+        <p class="noCurb-text text">These cannot be disposed of at curbside. See our Recycling center locator to find a facility to take your items.</p>
       </section>
     </a>
       <main class="grid">

@@ -89,4 +89,5 @@ figure {
   background: rgba(204, 204, 204, 0.5);
   border: 5px solid white;
   border-radius: 15px;
+  padding: 1%;
 }

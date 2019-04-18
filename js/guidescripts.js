@@ -4,7 +4,7 @@ $(function() {
   $(".paper").click(function(event) {
     event.preventDefault();
     $("figure, .text").hide();
-    $(".paperGrid").toggle();
+    $(".paperGrid, .paper-text").toggle();
   });
   $(".plastic").click(function(event) {
     event.preventDefault();
@@ -14,7 +14,7 @@ $(function() {
   $(".metal").click(function(event) {
     event.preventDefault();
     $("figure, .text").hide();
-    $(".metalGrid").toggle();
+    $(".metalGrid, metal-text").toggle();
   });
   $(".glass").click(function(event) {
     event.preventDefault();
@@ -29,7 +29,7 @@ $(function() {
   $(".noCurb").click(function(event) {
     event.preventDefault();
     $("figure, .text").hide();
-    $(".noCurbGrid").toggle();
+    $(".noCurbGrid, noCurb-text").toggle();
   });
 });
 
