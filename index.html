@@ -5,18 +5,25 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title></title>
   </head>
   <body>
+    <ul class="menu">
+      <li><a href="guide.html">Recycling Guide</a></li>
+      <li><a href="quiz2.html">Quiz</a></li>
+      <li><a href="#pickup">Pickup Information</a></li>
+      <li><a href="../map/map.html">Recycling Locations</a></li>
+    </ul>
     <div class="gridHeader">
       <div class="header">
-        <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
+        <img class="logo" src="img/logo2.png" width="200px" alt="image of recycling" />
         <h1 class="heading">Portland Recycling Guide</h1>
       </div>
     </div>
     <div class="grid">
       <div class="pickUpFinder">
-        <h4>Enter Your Portland Street Address to Find Your Pickup Information:</h4>
+        <p>Enter Your Portland Street Address to Find Your Pickup Information:</p>
         <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" />
           <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" /> <input type="submit" value="Submit" class="button"/>
         </form>
@@ -31,7 +38,7 @@
       </a>
       <a href="quiz2.html">
         <figure class="quiz gridBox">
-          <img src="img/quiz.jpg" alt="image of recycling bin">
+          <img src="img/quiz2.png" alt="image of recycling bin">
           <figcaption>
             <p>Test Your Recycling Knowledge!</p>
           </figcaption>
@@ -62,7 +69,7 @@
             </div>
           </div>
         </div>
-        <h5>© 2019 MLBZ. All rights reserved.</h5>
+        <p>© 2019 MLBZ. All rights reserved.</p>
       </div>
     </div>
   </body>

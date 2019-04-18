@@ -1,6 +1,8 @@
 body {
-  background-color: #FAF3DD;
+  background-color: #62bbc1;
   color: #0A3200;
+  margin-top: 1vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -22,12 +24,17 @@ a:hover {
 }
 
 .header {
-  background: white;
+  background: #fffbfc;
   padding-bottom: 5vh;
   grid-column: 1/4;
   grid-row: 1/2;
   text-align: center;
   margin-bottom: 2vh;
+  padding-top: 5vh;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .grid {
@@ -35,25 +42,28 @@ a:hover {
   display: grid;
   grid-column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  justify-items: center;
   border-radius: 5px;
 }
 
 .gridBox {
 
-  border: 5px solid #68B0AB;
-  border-radius: 15%;
-  background-color: white;
+  border: 2px solid white;
+  border-radius: 10%;
+  background-color: #fffbfc;
   height: 25vh;
   width: 25vh;
 }
 
 .footer {
-  background: white;
-  padding: 4em;
+  background: #fffbfc;
+  padding: 2em;
   margin-top: 10vh;
   grid-column: 1/4;
   text-align: center;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 80vw;
 }
 
 #siteMenu {
@@ -66,7 +76,7 @@ a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .pickUpFinder {
@@ -74,10 +84,13 @@ a:hover {
   padding: 2em;
   grid-column: 1/4;
   grid-row: 2/3;
-  background: rgba(69, 155, 82, 0.8);
-  border-radius: 25px;
+  background: #fffbfc;
+  border-radius: 10px;
   border: 2px solid white;
   text-align: center;
+  width: 80vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 figure:hover figcaption {
@@ -119,12 +132,12 @@ figcaption > p {
 
 
 .modal-content {
-  background: rgba(69, 155, 82);
+  background-color: #62bbc1;
   margin: 10vh auto;
   padding: 20px;
   border: 1px solid black;
-  width: 60vw;
-  height: 40vh;
+  width: 50vh;
+
 }
 
 
@@ -143,9 +156,37 @@ figcaption > p {
 }
 
 .button {
-  background: #1F4725;
-  font-weight: bold;
-  border-radius: 25px;
+  background: #62bbc1;
+  border-radius: 5px;
   color: white;
   padding: 3px 7px 3px 7px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10vh;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  color: #393f4d;
+  text-align: center;
+  padding: 14px 16px;
+  text decoration: none;
+  background-color: #fffbfc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: #62bbc1;
+}
+
+a:hover {
+  text-decoration: none;
 }
