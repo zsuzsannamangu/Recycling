@@ -48,4 +48,4 @@ _We used HTML, CSS, bootstrap, JavaScript, jQuery and a lot of DuckDuckGo-ing to
 
 *GPL, keep information free.*
 
-Copyright (c) 2016 **_Zsuzsanna Mangu, Lindsey Baker, Brian Hensley_**
+Copyright (c) 2016 **_Zsuzsanna Mangu, Lindsey Baker, Brian Hensley, Mathew Akre_**
