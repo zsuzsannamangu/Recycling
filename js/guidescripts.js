@@ -58,42 +58,42 @@ $(function(){
     if (userSearchInput === paperSectionArray[i]) {
       $("figure, .text").hide();
       $(".paperGrid").toggle();
-      document.getElementById("searchForm").action = "#paper-section";
+      location.href = "#paper-section";
       return;
     }
     for (var i = 0; i < plasticSectionArray.length; i++)
     if (userSearchInput === plasticSectionArray[i]) {
       $("figure, .text").hide();
       $(".plasticGrid").toggle();
-      document.getElementById("searchForm").action = "#plastic-section";
+      location.href = "#plastic-section";
       return;
     }
     for (var i = 0; i < metalSectionArray.length; i++)
     if (userSearchInput === metalSectionArray[i]) {
       $("figure, .text").hide();
       $(".metalGrid").toggle();
-      document.getElementById("searchForm").action = "#metal-section";
+      location.href = "#metal-section";
       return;
     }
     for (var i = 0; i < glassSectionArray.length; i++)
     if (userSearchInput === glassSectionArray[i]) {
       $("figure, .text").hide();
       $(".glassGrid").toggle();
-      document.getElementById("searchForm").action = "#glass-section";
+      location.href = "#glass-section";
       return;
     }
     for (var i = 0; i < trashSectionArray.length; i++)
     if (userSearchInput === trashSectionArray[i]) {
       $("figure, .text").hide();
       $(".trashGrid").toggle();
-      document.getElementById("searchForm").action = "#trash-section";
+      location.href = "#trash-section";
       return;
     }
     for (var i = 0; i < noCurbSectionArray.length; i++)
     if (userSearchInput === noCurbSectionArray[i]) {
       $("figure, .text").hide();
       $(".noCurbGrid").toggle();
-      document.getElementById("searchForm").action = "#noCurb-section";
+      location.href = "#noCurb-section";
       return;
     }
   });
