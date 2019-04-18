@@ -32,7 +32,7 @@ _No known bugs_
 |Add click functionality to image|user clicks on an image|Recycling info for that image displayed|
 |Add hover functionality to image |user hovers mouse on an image|Recycling info for that image displayed|
 |After recycling, add trash and compost|user clicks on trash or compost menu|Menu expands to explain trash or compost options|
-|Add quiz - users get 10 questions|User clicks quiz|User is shown images and asked to choose whether it's recycling or trash|
+|Add quiz - users get 7 questions|User clicks quiz|User is shown images and asked to choose whether it's recycling or trash|
 |Add randomizer for quiz - questions rotate|User clicks quiz|User is shown a random selection of quiz questions instead of the same ten.|
 
 
