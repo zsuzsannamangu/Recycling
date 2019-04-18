@@ -1,121 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/awesomplete.css" />
-  <link href="css/guidestyles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.4.0.js"></script>
-  <script src="js/awesomplete.js" async></script>
-  <script src="js/guidescripts.js"></script>
-  <meta charset="utf-8">
-</head>
-<body class="mainGrid" background="img/background.jpg">
-  <div class="container">
-    <a href="index.html">
-      <header>
-        <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
-        <h1 class="heading">Portland Recycling Guide</h1>
-      </header>
-    </a>
-    <!-- This is the location finder, it's here until we know where to move it -->
-    <!-- <h4>Enter your Portland street address to find out your pickup days:</h4>
-    <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" /> <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" placeholder="Enter Addess..." /> <input type="submit" value="Submit" /></form> -->
-<div class="header">
-  <h4>Unsure About What to Do With Your Waste? <br>Search Here:</h4>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/awesomplete.css" />
+    <link href="css/guidestyles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.0.js"></script>
+    <script src="js/awesomplete.js" async></script>
+    <script src="js/guidescripts.js"></script>
+    <meta charset="utf-8">
+  </head>
+  <body class="mainGrid" background="img/background.jpg">
+    <div class="container">
+      <a href="index.html">
+        <header>
+          <img class="logo" src="img/recycle.png" width="200px" alt="image of recycling" />
+          <h1 class="heading">Portland Recycling Guide</h1>
+        </header>
+      </a>
+
+      <div class="header">
+        <h4>Unsure About What to Do With Your Waste? <br>Search Here:</h4>
 
 
-    <form id="searchForm">
-      <input name="searchList" class="awesomplete" id="searchList" list="mylist" placeholder="Enter an item..."/>
-      <datalist id="mylist">
-        <!-- Paper section -->
-        <option class="paper-value">cardboard</option>
-        <option class="paper-value">scrap paper</option>
-        <option class="paper-value">paper</option>
-        <option class="paper-value">newspaper</option>
-        <option class="paper-value">envelopes</option>
-        <option class="paper-value">mail</option>
-        <option class="paper-value">shredded paper</option>
-        <option class="paper-value">cartons</option>
-        <option class="paper-value">tetrapacks</option>
-        <option class="paper-value">food boxes</option>
-        <option class="paper-value">aseptic containers</option>
-        <!-- plastic section -->
-        <option class="plastic-value">milk cartons</option>
-        <option class="plastic-value">juice cartons</option>
-        <option class="plastic-value">soup cartons</option>
-        <option class="plastic-value">plastic bottles</option>
-        <option class="plastic-value">plastic tubs</option>
-        <option class="plastic-value">yogurt cups</option>
-        <option class="plastic-value">butter tubs</option>
-        <option class="plastic-value">plastic flower pots</option>
-        <option class="plastic-value">buckets</option>
-        <!-- metal section -->
-        <option class="metal-value">aluminum</option>
-        <option class="metal-value">aluminum cans</option>
-        <option class="metal-value">paint cans</option>
-        <option class="metal-value">aerosol cans</option>
-        <option class="metal-value">steel</option>
-        <option class="metal-value">steel cans</option>
-        <option class="metal-value">scrap metal</option>
-        <option class="metal-value">metal lids</option>
-        <!-- glass section -->
-        <option class="glass-value">glass</option>
-        <option class="glass-value">glass jars</option>
-        <option class="glass-value">glass bottles</option>
-        <option class="glass-value">colored glass</option>
-        <!-- trash section -->
-        <option class="trash-value">plastic bags</option>
-        <option class="trash-value">compostable containers</option>
-        <option class="trash-value">compostable plastics</option>
-        <option class="trash-value">compostable utinsils</option>
-        <option class="trash-value">plastic lids</option>
-        <option class="trash-value">take out containers</option>
-        <option class="trash-value">freezer boxes</option>
-        <option class="trash-value">diapers</option>
-        <option class="trash-value">coffee cups</option>
-        <option class="trash-value">lightbulbs</option>
-        <option class="trash-value">drinking glasses</option>
-        <option class="trash-value">flower vases</option>
-        <option class="trash-value">cereamics</option>
-        <option class="trash-value">broken glass</option>
-        <option class="trash-value">styrofoam</option>
-        <option class="trash-value">clamshell packaging</option>
-        <option class="trash-value">painted wood</option>
-        <option class="trash-value">treated wood</option>
-        <option class="trash-value">stained wood</option>
-        <option class="trash-value">plywood</option>
-        <option class="trash-value">sawdust</option>
-        <option class="trash-value">ashes</option>
-        <option class="trash-value">packing peanuts</option>
-        <!-- special section -->
-        <option class="noCurb-value">propane tanks</option>
-        <option class="noCurb-value">hazardous chemicals</option>
-        <option class="noCurb-value">pesticides</option>
-        <option class="noCurb-value">herbicides</option>
-        <option class="noCurb-value">paints</option>
-        <option class="noCurb-value">cleaners</option>
-        <option class="noCurb-value">cooking oil</option>
-        <option class="noCurb-value">kitchen oils</option>
-        <option class="noCurb-value">e-waste</option>
-        <option class="noCurb-value">computers</option>
-        <option class="noCurb-value">monitors</option>
-        <option class="noCurb-value">televisions</option>
-        <option class="noCurb-value">electronics</option>
-        <option class="noCurb-value">CFLs</option>
-        <option class="noCurb-value">batteries</option>
-      </datalist>
-      <button id="search-id" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-</div>
+        <form id="searchForm">
+          <input name="searchList" class="awesomplete" id="searchList" list="mylist" placeholder="Enter an item..."/>
+          <datalist id="mylist">
+            <!-- Paper section -->
+            <option class="paper-value">cardboard</option>
+            <option class="paper-value">scrap paper</option>
+            <option class="paper-value">paper</option>
+            <option class="paper-value">newspaper</option>
+            <option class="paper-value">envelopes</option>
+            <option class="paper-value">mail</option>
+            <option class="paper-value">shredded paper</option>
+            <option class="paper-value">cartons</option>
+            <option class="paper-value">tetrapacks</option>
+            <option class="paper-value">food boxes</option>
+            <option class="paper-value">aseptic containers</option>
+            <!-- plastic section -->
+            <option class="plastic-value">milk cartons</option>
+            <option class="plastic-value">juice cartons</option>
+            <option class="plastic-value">soup cartons</option>
+            <option class="plastic-value">plastic bottles</option>
+            <option class="plastic-value">plastic tubs</option>
+            <option class="plastic-value">yogurt cups</option>
+            <option class="plastic-value">butter tubs</option>
+            <option class="plastic-value">plastic flower pots</option>
+            <option class="plastic-value">buckets</option>
+            <!-- metal section -->
+            <option class="metal-value">aluminum</option>
+            <option class="metal-value">aluminum cans</option>
+            <option class="metal-value">paint cans</option>
+            <option class="metal-value">aerosol cans</option>
+            <option class="metal-value">steel</option>
+            <option class="metal-value">steel cans</option>
+            <option class="metal-value">scrap metal</option>
+            <option class="metal-value">metal lids</option>
+            <!-- glass section -->
+            <option class="glass-value">glass</option>
+            <option class="glass-value">glass jars</option>
+            <option class="glass-value">glass bottles</option>
+            <option class="glass-value">colored glass</option>
+            <!-- trash section -->
+            <option class="trash-value">plastic bags</option>
+            <option class="trash-value">compostable containers</option>
+            <option class="trash-value">compostable plastics</option>
+            <option class="trash-value">compostable utinsils</option>
+            <option class="trash-value">plastic lids</option>
+            <option class="trash-value">take out containers</option>
+            <option class="trash-value">freezer boxes</option>
+            <option class="trash-value">diapers</option>
+            <option class="trash-value">coffee cups</option>
+            <option class="trash-value">lightbulbs</option>
+            <option class="trash-value">drinking glasses</option>
+            <option class="trash-value">flower vases</option>
+            <option class="trash-value">cereamics</option>
+            <option class="trash-value">broken glass</option>
+            <option class="trash-value">styrofoam</option>
+            <option class="trash-value">clamshell packaging</option>
+            <option class="trash-value">painted wood</option>
+            <option class="trash-value">treated wood</option>
+            <option class="trash-value">stained wood</option>
+            <option class="trash-value">plywood</option>
+            <option class="trash-value">sawdust</option>
+            <option class="trash-value">ashes</option>
+            <option class="trash-value">packing peanuts</option>
+            <!-- special section -->
+            <option class="noCurb-value">propane tanks</option>
+            <option class="noCurb-value">hazardous chemicals</option>
+            <option class="noCurb-value">pesticides</option>
+            <option class="noCurb-value">herbicides</option>
+            <option class="noCurb-value">paints</option>
+            <option class="noCurb-value">cleaners</option>
+            <option class="noCurb-value">cooking oil</option>
+            <option class="noCurb-value">kitchen oils</option>
+            <option class="noCurb-value">e-waste</option>
+            <option class="noCurb-value">computers</option>
+            <option class="noCurb-value">monitors</option>
+            <option class="noCurb-value">televisions</option>
+            <option class="noCurb-value">electronics</option>
+            <option class="noCurb-value">CFLs</option>
+            <option class="noCurb-value">batteries</option>
+          </datalist>
+          <button id="search-id" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
 
-    <!-- <!- Paper Grid -->
-    <a name="paper-section">
-      <section class="paper header">
-        <h3 class="paper-title">Paper</h3>
-        <p class="paper-text text">These recyclables can be placed in your curbside recycling to be taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p>
-      </section>
-    </a>
+      <!-- <!- Paper Grid -->
+      <a name="paper-section">
+        <section class="paper header">
+          <h3 class="paper-title">Paper</h3>
+          <p class="paper-text text">These recyclables can be placed in your curbside recycling to be taken to a recycling facility where they are sorted and delivered for reuse as raw materials in new products.</p>
+        </section>
+      </a>
       <main class="grid">
         <figure class="paperGrid">
           <img class="paper-cards-img" src="img/newspaper.jpg" alt="newspaper"/>
@@ -156,12 +154,12 @@
       </main>
       <br>
       <!-- Plastic -->
-    <a name="plastic-section">
-      <section class="plastic header">
-        <h3 class="plastic-title">Plastic</h3>
-        <p class="plastic-text text">These items can be placed in curbside recycling. Remember to rinse all items first! Lids cannot be recycled, discard plastic lids!</p>
-      </section>
-    </a>
+      <a name="plastic-section">
+        <section class="plastic header">
+          <h3 class="plastic-title">Plastic</h3>
+          <p class="plastic-text text">These items can be placed in curbside recycling. Remember to rinse all items first! Lids cannot be recycled, discard plastic lids!</p>
+        </section>
+      </a>
       <main class="grid">
         <figure class="plasticGrid">
           <img class="plastic-cards-img" src="img/plastic-bottle.png" alt="plastic bottles" />
@@ -190,12 +188,12 @@
       </main>
       <br>
       <!-- Metal -->
-    <a name="metal-section">
-      <section class="metal header">
-        <h3 class="metal-title">Metal</h3>
-        <p class="metal-text text">These recyclables can be placed in curbside recycling. Remeber to rinse!</p>
-      </section>
-    </a>
+      <a name="metal-section">
+        <section class="metal header">
+          <h3 class="metal-title">Metal</h3>
+          <p class="metal-text text">These recyclables can be placed in curbside recycling. Remeber to rinse!</p>
+        </section>
+      </a>
       <main class="grid">
         <figure class="metalGrid">
           <img class="metal-cards-img" src="img/alum-cans.jpg" alt="aluminium can"/>
@@ -230,12 +228,12 @@
       </main>
       <br>
       <!-- Glass -->
-    <a name="glass-section">
-      <section class="glass header">
-        <h3 class="glass-title">Glass</h3>
-        <p class="glass-text text">Mix all colors together. Rinse. Labels OK. Separate from other recyclables, put glass in the glass-only recycling tub.</p>
-      </section>
-    </a>
+      <a name="glass-section">
+        <section class="glass header">
+          <h3 class="glass-title">Glass</h3>
+          <p class="glass-text text">Mix all colors together. Rinse. Labels OK. Separate from other recyclables, put glass in the glass-only recycling tub.</p>
+        </section>
+      </a>
       <main class="grid">
         <figure class="glassGrid">
           <img class="glass-cards-img" src="img/glass-jar.jpg" alt="glass jar" />
@@ -252,12 +250,12 @@
       </main>
       <br>
       <!-- Trash -->
-    <a name="trash-section">
-      <section class="trash header">
-        <h3 class="trash-title">Trash Cart</h3>
-        <p class="trash-text text">This is stuff that cannot be recycled in Portland. It goes into landfills and remains there for generations. Reduce or re-use these items whenever possible.</p>
-      </section>
-    </a>
+      <a name="trash-section">
+        <section class="trash header">
+          <h3 class="trash-title">Trash Cart</h3>
+          <p class="trash-text text">This is stuff that cannot be recycled in Portland. It goes into landfills and remains there for generations. Reduce or re-use these items whenever possible.</p>
+        </section>
+      </a>
       <main class="grid">
         <figure class="trashGrid">
           <img class="trash-cards-img" src="img/plastic-bags.jpg" alt="plastic bags" />
@@ -372,51 +370,51 @@
           <figcaption class="trash-cards-title">
             <p>Packaging peanuts (must be bagged when thrown to trash)
               Block packaging foam- Styrofoam blocks are accepted at Agilyx Corporation at 13240 SW Wall St., Tigard OR 97223. A dropbox is available 24 hours for residential drop-off.</p>
-          </figcaption>
-        </figure>
-        <figure class="trashGrid">
-          <img class="trash-cards-img" src="img/kitchen-oil.jpg" alt="Kitchen oil" />
-          <figcaption class="trash-cards-title">
-            <p>Kitchen fats, oil, grease (place in sealed container)</p>
-          </figcaption>
-        </figure>
+            </figcaption>
+          </figure>
+          <figure class="trashGrid">
+            <img class="trash-cards-img" src="img/kitchen-oil.jpg" alt="Kitchen oil" />
+            <figcaption class="trash-cards-title">
+              <p>Kitchen fats, oil, grease (place in sealed container)</p>
+            </figcaption>
+          </figure>
       </main>
         <br>
-      <!-- No Curbside -->
-    <a name="noCurb-section">
-      <section class="noCurb header">
-        <h3 class="noCurbside-title">No Curbside Disposal</h3>
-        <p class="noCurb-text text">These cannot be disposed of at curbside. See our Recycling center locator to find a facility to take your items.</p>
-      </section>
-    </a>
-      <main class="grid">
-        <figure class="noCurbGrid">
-          <img class="noCurbside-img" src="img/ewaste.jpg" alt="computers and keyboards" />
-          <figcaption class="noCurbside-cards-title">
-            Computers, monitors and TVs
-            These can be taken to Pride Recycling Depot at 13910 SW Tualatin-Sherwood Rd., Sherwood, OR 97140. Their hours are Mo-Fri 8:00am-4:30pm.
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/hazmat.jpg" alt="Hazardous material" />
-          <figcaption class="noCurbside-cards-title">
-            Hazardous waste: automotive fluids, kitchen oil, pesticides, herbicides, solvents
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/CFL.jpg" alt="Compact fluorescent light bulb" />
-          <figcaption class="noCurbside-cards-title">
-            Compact fluorescent light bulbs (CFLs)
-            CFLs can be dropped off at Total Reclaim, 6427 NE 59th Place, Portland OR 97218, M-F 8am-4:30pm.
-          </figcaption>
-        </figure>
-        <figure class="noCurbGrid">
-          <img class="noCurbside-cards-img" src="img/batteries.jpg" alt="batteries" />
-          <figcaption class="noCurbside-cards-title">
-            Batteries
-          </figcaption>
-        </figure>
-      </main>
-    </div>
-  </body>
+        <!-- No Curbside -->
+        <a name="noCurb-section">
+          <section class="noCurb header">
+            <h3 class="noCurbside-title">No Curbside Disposal</h3>
+            <p class="noCurb-text text">These cannot be disposed of at curbside. See our Recycling center locator to find a facility to take your items.</p>
+          </section>
+        </a>
+        <main class="grid">
+          <figure class="noCurbGrid">
+            <img class="noCurbside-img" src="img/ewaste.jpg" alt="computers and keyboards" />
+            <figcaption class="noCurbside-cards-title">
+              Computers, monitors and TVs
+              These can be taken to Pride Recycling Depot at 13910 SW Tualatin-Sherwood Rd., Sherwood, OR 97140. Their hours are Mo-Fri 8:00am-4:30pm.
+            </figcaption>
+          </figure>
+          <figure class="noCurbGrid">
+            <img class="noCurbside-cards-img" src="img/hazmat.jpg" alt="Hazardous material" />
+            <figcaption class="noCurbside-cards-title">
+              Hazardous waste: automotive fluids, kitchen oil, pesticides, herbicides, solvents
+            </figcaption>
+          </figure>
+          <figure class="noCurbGrid">
+            <img class="noCurbside-cards-img" src="img/CFL.jpg" alt="Compact fluorescent light bulb" />
+            <figcaption class="noCurbside-cards-title">
+              Compact fluorescent light bulbs (CFLs)
+              CFLs can be dropped off at Total Reclaim, 6427 NE 59th Place, Portland OR 97218, M-F 8am-4:30pm.
+            </figcaption>
+          </figure>
+          <figure class="noCurbGrid">
+            <img class="noCurbside-cards-img" src="img/batteries.jpg" alt="batteries" />
+            <figcaption class="noCurbside-cards-title">
+              Batteries
+            </figcaption>
+          </figure>
+        </main>
+      </div>
+    </body>
   </html>

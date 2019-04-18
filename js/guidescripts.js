@@ -14,7 +14,7 @@ $(function() {
   $(".metal").click(function(event) {
     event.preventDefault();
     $("figure, .text").hide();
-    $(".metalGrid, metal-text").toggle();
+    $(".metalGrid, .metal-text").toggle();
   });
   $(".glass").click(function(event) {
     event.preventDefault();
@@ -29,7 +29,7 @@ $(function() {
   $(".noCurb").click(function(event) {
     event.preventDefault();
     $("figure, .text").hide();
-    $(".noCurbGrid, noCurb-text").toggle();
+    $(".noCurbGrid, .noCurb-text").toggle();
   });
 });
 
@@ -57,42 +57,42 @@ $(function(){
     for (var i = 0; i < paperSectionArray.length; i++)
     if (userSearchInput === paperSectionArray[i]) {
       $("figure, .text").hide();
-      $(".paperGrid").toggle();
+      $(".paperGrid, .paper-text").toggle();
       location.href = "#paper-section";
       return;
     }
     for (var i = 0; i < plasticSectionArray.length; i++)
     if (userSearchInput === plasticSectionArray[i]) {
       $("figure, .text").hide();
-      $(".plasticGrid").toggle();
+      $(".plasticGrid, .plastic-text").toggle();
       location.href = "#plastic-section";
       return;
     }
     for (var i = 0; i < metalSectionArray.length; i++)
     if (userSearchInput === metalSectionArray[i]) {
       $("figure, .text").hide();
-      $(".metalGrid").toggle();
+      $(".metalGrid, .metal-text").toggle();
       location.href = "#metal-section";
       return;
     }
     for (var i = 0; i < glassSectionArray.length; i++)
     if (userSearchInput === glassSectionArray[i]) {
       $("figure, .text").hide();
-      $(".glassGrid").toggle();
+      $(".glassGrid, .glass-text").toggle();
       location.href = "#glass-section";
       return;
     }
     for (var i = 0; i < trashSectionArray.length; i++)
     if (userSearchInput === trashSectionArray[i]) {
       $("figure, .text").hide();
-      $(".trashGrid").toggle();
+      $(".trashGrid, .trash-text").toggle();
       location.href = "#trash-section";
       return;
     }
     for (var i = 0; i < noCurbSectionArray.length; i++)
     if (userSearchInput === noCurbSectionArray[i]) {
       $("figure, .text").hide();
-      $(".noCurbGrid").toggle();
+      $(".noCurbGrid, .noCurb-text").toggle();
       location.href = "#noCurb-section";
       return;
     }
