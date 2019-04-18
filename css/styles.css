@@ -35,12 +35,11 @@ a:hover {
   display: grid;
   grid-column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  justify-items: center;
   border-radius: 5px;
 }
 
 .gridBox {
-
   border: 5px solid #68B0AB;
   border-radius: 15%;
   background-color: white;
@@ -50,6 +49,7 @@ a:hover {
 
 .footer {
   background: white;
+  width: 80vw;
   padding: 4em;
   margin-top: 10vh;
   grid-column: 1/4;
@@ -71,6 +71,7 @@ a:hover {
 
 .pickUpFinder {
   margin-top: 3vh;
+  width: 80vw;
   padding: 2em;
   grid-column: 1/4;
   grid-row: 2/3;
