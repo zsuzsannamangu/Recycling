@@ -61,22 +61,11 @@ $(function() {
 
 
 $(function(){
-
   $('#searchForm').submit(function(event) {
-    event.preventDefault();
-    var userSearchInput = $("#searchList").val()
-    var optionSearch = document.getElementsByTagName("option");
-    console.log(optionSearch);
-    // for (var i = 0; i < = optionSearch.length; i++) {
-      // if (userSearchInput === optionSearch.val()) {
-    //     alert(optionSearch.k;
-    //   }
-    // }
-    console.log(userSearchInput);
+    var output = $(".awesomplete input").val()
+    alert(output);
+    
 
-    // var to store user input
-    // compare input to values in #myList -> google method
-    // on a match, show that value's associated class
     if (userSearchInput) {
       // alert("paper")
       $("figure, .text").hide();
