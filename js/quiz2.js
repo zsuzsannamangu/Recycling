@@ -1,22 +1,22 @@
-// pos is position of where the user in the qa or which question they're up to
+
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+  var m = array.length, c, i;
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+  // While there remain elements to shuffle…
+  while (m) {
 
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
 
     // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+    c = array[m];
+    array[m] = array[i];
+    array[i] = c;
   }
 
   return array;
 }
+
 var random_pos = 0
 var order = shuffle([0,1,2,3,4,5,6]);
 var pos = order[random_pos];
