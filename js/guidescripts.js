@@ -1,3 +1,5 @@
+// This is the expand section
+
 $(function() {
   $(".paper").click(function(event) {
     event.preventDefault();
@@ -31,76 +33,98 @@ $(function() {
   });
 });
 
-// function myList(){
-//   if ($("option").hasClass('paper-value') === true) {
-//     alert("paper")
-//     $("figure, .text").hide();
-//     $(".paperGrid").toggle();
-//   } else if ($('option').hasClass('plastic-value') === true) {
-//     alert("plastic")
-//     $("figure, .text").hide();
-//     $(".plasticGrid, .plastic-text").toggle();
-//   } else if ($('option').hasClass('metal-value') === true) {
-//     alert("metal")
-//     $("figure, .text").hide();
-//     $(".metalGrid").toggle();
-//   } else if ($('option').hasClass('glass-value') === true) {
-//     alert("glass")
-//     $("figure, .text").hide();
-//     $(".glassGrid, .glass-text").toggle();
-//   } else if ($('option').hasClass('trash-value') === true) {
-//     alert("trash")
-//     $("figure, .text").hide();
-//     $(".trashGrid, .trash-text").toggle();
-//   } else if($('option').hasClass('noCurb-value') === true) {
-//     alert("special")
-//     $("figure, .text").hide();
-//     $(".noCurbGrid").toggle();
-//   }
-// }
 
+// this is the awesomplete section
+
+var paperSectionArray = ['cardboard', 'scrap paper', 'paper', 'newspaper', 'envelopes', 'mail', 'shredded paper', 'cartons', 'tetrapacks', 'food boxes', 'aseptic containers'];
+
+var plasticSectionArray = ['milk cartons', 'juice cartons', 'soup cartons', 'plastic bottles', 'plastic tubs', 'yogurt cups', 'butter tubs', 'plastic flower pots', 'buckets'];
+
+var metalSectionArray = ['aluminum', 'aluminum cans', 'paint cans', 'aerosol cans', 'steel', 'steel cans', 'scrap metal', 'metal lids'];
+
+var glassSectionArray = ['glass', 'glass jars', 'glass bottles', 'colored glass'];
+
+var trashSectionArray = ['plastic bags', 'compostable containers', 'compostable plastics', 'compostable utinsils', 'plastic lids', 'take out containers', 'freezer boxes', 'diapers', 'coffee cups', 'lightbulbs', 'drinking glasses', 'flower vases', 'cereamics', 'broken glass', 'styrofoam', 'clamshell packaging', 'painted wood', 'treated wood', 'stained wood', 'plywood', 'sawdust', 'ashes', 'packing peanuts'];
+
+var noCurbSectionArray = ['propane tanks', 'hazardous chemicals', 'pesticides', 'herbicides', 'paints', 'cleaners', 'cooking oil', 'kitchen oils', 'e-waste', 'computers', 'monitors', 'televisions', 'electronics', 'CFLs', 'batteries'];
+
+// var to store user input
+// compare input to values in #myList -> google method
+// on a match, show that value's associated class
 
 $(function(){
-
   $('#searchForm').submit(function(event) {
     event.preventDefault();
     var userSearchInput = $("#searchList").val()
     var optionSearch = document.getElementsByTagName("option");
-    console.log(optionSearch);
-    // for (var i = 0; i < = optionSearch.length; i++) {
-      // if (userSearchInput === optionSearch.val()) {
-    //     alert(optionSearch.k;
-    //   }
-    // }
     console.log(userSearchInput);
-
-    // var to store user input
-    // compare input to values in #myList -> google method
-    // on a match, show that value's associated class
-    if (userSearchInput) {
-      // alert("paper")
+    for (var i = 0; i < paperSectionArray.length; i++)
+    if (userSearchInput === paperSectionArray[i]) {
       $("figure, .text").hide();
       $(".paperGrid").toggle();
-    } else if ($('option').hasClass('plastic-value')) {
-      // alert("plastic")
+      document.getElementById("searchForm").action = "#paper-section";
+      return;
+    }
+    for (var i = 0; i < plasticSectionArray.length; i++)
+    if (userSearchInput === plasticSectionArray[i]) {
       $("figure, .text").hide();
-      $(".plasticGrid, .plastic-text").toggle();
-    } else if ($('option').hasClass('metal-value')) {
-      // alert("metal")
+      $(".plasticGrid").toggle();
+      document.getElementById("searchForm").action = "#plastic-section";
+      return;
+    }
+    for (var i = 0; i < metalSectionArray.length; i++)
+    if (userSearchInput === metalSectionArray[i]) {
       $("figure, .text").hide();
       $(".metalGrid").toggle();
-    } else if ($('option').hasClass('glass-value')) {
-      // alert("glass")
+      document.getElementById("searchForm").action = "#metal-section";
+      return;
+    }
+    for (var i = 0; i < glassSectionArray.length; i++)
+    if (userSearchInput === glassSectionArray[i]) {
       $("figure, .text").hide();
-      $(".glassGrid, .glass-text").toggle();
-    } else if ($('option').hasClass('trash-value')) {
-      // alert("trash")
+      $(".glassGrid").toggle();
+      document.getElementById("searchForm").action = "#glass-section";
+      return;
+    }
+    for (var i = 0; i < trashSectionArray.length; i++)
+    if (userSearchInput === trashSectionArray[i]) {
       $("figure, .text").hide();
-      $(".trashGrid, .trash-text").toggle();
-    } else if($('option').hasClass('noCurb-value')) {
-      // alert("special")
+      $(".trashGrid").toggle();
+      document.getElementById("searchForm").action = "#trash-section";
+      return;
+    }
+    for (var i = 0; i < noCurbSectionArray.length; i++)
+    if (userSearchInput === noCurbSectionArray[i]) {
       $("figure, .text").hide();
       $(".noCurbGrid").toggle();
-    } else {};
+      document.getElementById("searchForm").action = "#noCurb-section";
+      return;
+    }    
   });
 });
+
+    // if (userSearchInput) {
+    //   // alert("paper")
+    //   $("figure, .text").hide();
+    //   $(".paperGrid").toggle();
+    // } else if ($('option').hasClass('plastic-value')) {
+    //   // alert("plastic")
+    //   $("figure, .text").hide();
+    //   $(".plasticGrid, .plastic-text").toggle();
+    // } else if ($('option').hasClass('metal-value')) {
+    //   // alert("metal")
+    //   $("figure, .text").hide();
+    //   $(".metalGrid").toggle();
+    // } else if ($('option').hasClass('glass-value')) {
+    //   // alert("glass")
+    //   $("figure, .text").hide();
+    //   $(".glassGrid, .glass-text").toggle();
+    // } else if ($('option').hasClass('trash-value')) {
+    //   // alert("trash")
+    //   $("figure, .text").hide();
+    //   $(".trashGrid, .trash-text").toggle();
+    // } else if($('option').hasClass('noCurb-value')) {
+    //   // alert("special")
+    //   $("figure, .text").hide();
+    //   $(".noCurbGrid").toggle();
+    // } else {};
