@@ -13,7 +13,7 @@ a:hover {
 }
 
 .gridHeader {
-  margin-bottom: 8vh;
+  margin-bottom: 1vh;
   display: grid;
   grid-column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
@@ -27,11 +27,11 @@ a:hover {
   grid-column: 1/4;
   grid-row: 1/2;
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .grid {
-  margin: 3vh 10vw 3vh 10vw;
+  margin: 0 10vw 3vh 10vw;
   display: grid;
   grid-column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
@@ -67,6 +67,17 @@ a:hover {
   width: 100%;
   object-fit: cover;
   border-radius: 15%;
+}
+
+.pickUpFinder {
+  margin-bottom: 1vh;
+  padding: 2em;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background: rgba(69, 155, 82, 0.8);
+  border-radius: 25px;
+  border: 2px solid white;
+  text-align: center;
 }
 
 figure:hover figcaption {
@@ -108,11 +119,12 @@ figcaption > p {
 
 
 .modal-content {
-  background: rgba(69, 155, 82, 0.75);
+  background: rgba(69, 155, 82);
   margin: 10vh auto;
   padding: 20px;
   border: 1px solid black;
   width: 60vw;
+  height: 40vh;
 }
 
 
@@ -128,4 +140,12 @@ figcaption > p {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.button {
+  background: #1F4725;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  padding: 3px 7px 3px 7px;
 }
