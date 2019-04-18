@@ -15,11 +15,17 @@
       </div>
     </div>
     <div class="grid">
+      <div class="pickUpFinder">
+        <h4>Enter Your Portland Street Address to Find Your Pickup Information:</h4>
+        <form action="https://www.portlandmaps.com/search/" method="post"><input name="action_override" type="hidden" value="Hauler" />
+          <input name="units" type="hidden" value="0" /><input id="query" name="query" type="text" /> <input type="submit" value="Submit" class="button"/>
+        </form>
+      </div>
       <a href="guide.html">
         <figure class="guide gridBox">
             <img src="img/recycleinfo.png" alt="image of recycling bin">
             <figcaption>
-              <p>See our recycling guide</p>
+              <p>See Our Recycling Guide</p>
             </figcaption>
         </figure>
       </a>
@@ -27,7 +33,7 @@
         <figure class="quiz gridBox">
           <img src="img/quiz.jpg" alt="image of recycling bin">
           <figcaption>
-            <p>Test your recycling knowledge</p>
+            <p>Test Your Recycling Knowledge!</p>
           </figcaption>
         </figure>
       </a>
@@ -35,7 +41,7 @@
         <figure class="map gridBox">
           <img src="img/map.png" alt="image of recycling bin">
           <figcaption>
-            <p>Find out your pickup days</p>
+            <p>Find Recycling Locations</p>
           </figcaption>
         </figure>
       </a>
