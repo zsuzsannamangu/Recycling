@@ -47,6 +47,7 @@ function initMap() {
       content:'<h2><a href="http://www.goodwill.org/">Goodwill Industries</a></h2><br><h4>1231 NE Broadway, Portland, OR 97232</h4>'
     },
 
+  ]
 
   // Loop through Markers
 
