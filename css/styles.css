@@ -2,6 +2,7 @@ body {
   background-color: #62bbc1;
   color: #0A3200;
   margin-top: 1vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -32,12 +33,16 @@ a:hover {
   padding-top: 5vh;
 }
 
+.heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .grid {
   margin: 0 10vw 1vh 10vw;
   display: grid;
   grid-column-gap: 2%;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  justify-items: center;
   border-radius: 5px;
 }
 
@@ -57,6 +62,8 @@ a:hover {
   grid-column: 1/4;
   text-align: center;
   border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 80vw;
 }
 
 #siteMenu {
@@ -81,6 +88,9 @@ a:hover {
   border-radius: 10px;
   border: 2px solid white;
   text-align: center;
+  width: 80vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 figure:hover figcaption {
@@ -122,12 +132,12 @@ figcaption > p {
 
 
 .modal-content {
-  background: rgba(69, 155, 82);
+  background-color: #62bbc1;
   margin: 10vh auto;
   padding: 20px;
   border: 1px solid black;
-  width: 60vw;
-  height: 40vh;
+  width: 50vh;
+
 }
 
 
