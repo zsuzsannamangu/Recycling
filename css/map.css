@@ -12,6 +12,7 @@ body {
   width: 70%;
   float: right;
   border: 5px solid #0B3C49;
+  
 }
 
 .heading {
@@ -37,5 +38,9 @@ header {
 .sidebar {
   color: #0A3200;
   border: 5px solid #0B3C49;
+  position: sticky;
+  width: 30%;
+  top: 270px;
+  bottom: 0;
 
 }
