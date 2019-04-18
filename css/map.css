@@ -2,17 +2,28 @@ markers.iconImage {
   width: 10px;
 }
 body {
-    background: #449B51;
-    text-align: center;
-    color: #0A3200;
+  background-color: #62bbc1;
+  color: #0A3200;
+  margin-top: 1vh;
+  font-family: 'Montserrat', sans-serif;    text-align: center;
 }
 
 #map {
-  height: 500px;
+  height: 60vh;
+  margin-top: 10vh;
   width: 70%;
   float: right;
   border: 5px solid #0B3C49;
-  
+  border-radius: 15px;
+}
+
+img {
+  margin-left: 20px;
+  height: 180px;
+}
+
+li {
+  text-align: left;
 }
 
 .heading {
@@ -30,17 +41,35 @@ body {
 }
 
 header {
-  background: white;
-  height: 20vh;
-  margin-bottom: 5px;
+  background: #fffbfc;
+  border: 5px solid #0B3C49;
+  height: 220px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+  margin-bottom: 2vh;
+  border-radius: 15px;
 }
 
+h1 {
+  padding-top: 80px;
+}
 .sidebar {
   color: #0A3200;
   border: 5px solid #0B3C49;
   position: sticky;
-  width: 30%;
+  width: 25%;
   top: 270px;
   bottom: 0;
+  padding: 2%;
+  background: #fffbfc;
+  border-radius: 15px;
+}
 
+a {
+  text-decoration: none;
+  color: #0A3200;
+}
+a:hover {
+  color: #0A3200;
 }
