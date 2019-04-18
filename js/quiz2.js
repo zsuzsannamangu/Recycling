@@ -1,5 +1,25 @@
 // pos is position of where the user in the qa or which question they're up to
-var pos = 0;
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+var random_pos = 0
+var order = shuffle([0,1,2,3,4,5,6]);
+var pos = order[random_pos];
 var correct = 0;
 var answers, answer, qa, quiz_progress, question, choice, choices, chA, chB, chC;
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
@@ -62,17 +82,18 @@ function get(x){
 function renderQuestion(){
   qa = get("qa");
 
-  if (pos >= questions.length) {
+  if (random_pos >= questions.length) {
     qa.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct.</h2>";
     get("quiz_progress").innerHTML = "Quiz completed";
     // resets the variable to allow users to restart the test
-    pos = 0;
+    random_pos = 0;
+    pos = order[random_pos];
     correct = 0;
     // stops rest of renderQuestion function running when test is completed
     return false;
   }
 
-  get("quiz_progress").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+  get("quiz_progress").innerHTML = "Question "+(random_pos+1)+" of "+questions.length;
   question = questions[pos][0];
   chA = questions[pos][1];
   chB = questions[pos][2];
@@ -82,42 +103,44 @@ function renderQuestion(){
   qa.innerHTML += "<input class='R1' type='radio' name='choices' value='A'> "+chA+"<br>";
   qa.innerHTML += "<input class='R2' type='radio' name='choices' value='B'> "+chB+"<br>";
   qa.innerHTML += "<input class='R3' type='radio' name='choices' value='C'> "+chC+"<br><br>";
-  qa.innerHTML += "<button class='btn btn-success' onclick='checkAnswer()'>Submit Answer</button>";
-
-// function renderAnswer() {
-//   answers = get("answers");
-//
-//   get("answers").innerHTML = "Why is that?";
-//   answer = questions[pos][5];
-//   answers.innerHTML = "<h3>"+answer+"</h3>";
-//   // the += appends to the data we started on the line above
-//   // qa.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-//   // qa.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-//   // qa.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
-//   answers.innerHTML += "<button class='btn2 btn-success' onclick='checkAnswer()'>Next</button>";
-//
-// }
-
+  qa.innerHTML += "<button class='btn btn-success' onclick='nextQuestion()'>Next question</button>";
+  qa.innerHTML += "<button class='btn btn-info' onclick='showAnswer()'>Check Answer</button>";
 }
-function checkAnswer(){
+
+function nextQuestion(){
   // use getElementsByName because we have an array which it will loop through
   choices = document.getElementsByName("choices");
   for(var i=0; i<choices.length; i++){
     if(choices[i].checked){
       choice = choices[i].value;
-      get("answers").innerHTML = questions[pos][5];
-
     }
   }
-  // checks if answer matches the correct choice
   if (choice === questions[pos][4]){
-    //each time there is a correct answer this value increases
     correct++;
   }
-  // changes position of which character user is on
-  pos++;
+  random_pos++;
+  pos = order[random_pos]
+
+
   // then the renderQuestion function runs again to go to next question
-  // renderAnswer();
+  get("answers").innerHTML = "";
+  // $("#answers").html("")
   renderQuestion();
 }
+
+function showAnswer(){
+  // use getElementsByName because we have an array which it will loop through
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  if (choice === questions[pos][4]){
+    return get("answers").innerHTML = "You're correct.<br><br> "+questions[pos][5];
+  } else {
+    return get("answers").innerHTML = "That's incorrect.<br><br> "+questions[pos][5];
+  }
+}
+
 window.addEventListener("load", renderQuestion, false);
