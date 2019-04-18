@@ -1,11 +1,17 @@
 markers.iconImage {
   width: 10px;
 }
+body {
+    background: #449B51;
+    text-align: center;
+    color: #0A3200;
+}
 
 #map {
   height: 500px;
-  width: 80%;
+  width: 70%;
   float: right;
+  border: 5px solid #0B3C49;
 }
 
 .heading {
@@ -21,16 +27,15 @@ markers.iconImage {
   height: 15vh;
   float: left;
 }
- body {
-   text-align: center;
-   color: #0A3200;
- }
+
 header {
-  background: tan;
+  background: white;
   height: 20vh;
   margin-bottom: 5px;
 }
-p {
-  float: left;
-  display: none;
+
+.sidebar {
+  color: #0A3200;
+  border: 5px solid #0B3C49;
+
 }
